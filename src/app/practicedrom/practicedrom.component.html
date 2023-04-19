@@ -1,0 +1,9 @@
+<div class="w-25 p-3 border shadow m-auto mb-5">
+
+
+
+<label class="form-label" for="name">Name: </label>
+<input class="form-control" id="name" type="text" [formControl]="name">
+<p>Value: {{ name.value }}</p>
+<button class="btn btn-warning"  type="button" (click)="updateName()">Update Name</button>
+</div>
